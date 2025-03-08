@@ -165,6 +165,8 @@ This Ansible playbook automates the installation of Docker on Ubuntu machines. H
 ansible-playbook -i inventory.ini install_docker_ubuntu.yml --ask-become-pass
 ```
 
+![install docker](ss/01.png "install docker")
+
 ## Deploy Nginx using Docker
 
 This playbook deploys an Nginx container using Docker.
@@ -197,6 +199,8 @@ This playbook deploys an Nginx container using Docker.
 ansible-playbook -i inventory.ini deploy_nginx.yml --ask-become-pass
 ```
 
+![deploy nginx](ss/02.png "deploy nginx")
+
 ## Verify Deployment
 
 After running the playbooks, verify the setup:
@@ -216,6 +220,10 @@ docker ps
 ### Test Nginx Deployment
 
 Open a browser and visit `http://<your-server-ip>` to see the Nginx welcome page.
+
+![vmone](ss/03.png "vmone")
+
+![vmtwo](ss/04.png "vmtwo")
 
 ## Cleanup
 

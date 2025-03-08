@@ -1,5 +1,5 @@
 - name: Deploy Nginx container
-  hosts: linux_mint
+  hosts: ubuntu
   become: true
   tasks:
     - name: Run Nginx container
